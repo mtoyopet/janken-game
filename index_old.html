@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <p id="greetingText">こんにちは</p>
+  <button onclick="changeText()">ボタン</button> -->
+
+  <p>色を入力してください</p>
+  <input id="input" type="text"></input>
+  <button onclick="changeColor()">変更する</button>
+
+  <p id="hotText">今日は暑いです</p>
+
+  <script>
+    function changeColor () {
+      // クリックイベントを設置する
+      // inputタグの入力内容を取得する
+      // pタグを取得し、入力された文字の色にテキストの色を変更する
+      const inputTag = document.getElementById("input")
+      const pTag = document.getElementById("hotText")
+      pTag.style.color = inputTag.value
+    }
+
+    // function changeText() {
+    //   const pTag = document.getElementById("greetingText")
+    //   pTag.innerHTML = "さようなら"
+    // }
+
+    // function changeColor() {
+    //   document.getElementById("hotText").style.color = "red";
+    // }
+    // 1. ボタンタグにクリックイベントを追加する
+    // 2. pタグにIDを追加する
+    // 3. changeColor関数の中で
+    //   3.1 pタグを取得し変数に格納する
+    //   3.2 pタグの色を赤色に変える
+  </script>
+</body>
+</html>
